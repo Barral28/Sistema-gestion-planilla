@@ -1,0 +1,10 @@
+version: '3'
+services:
+  nextjs_app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    # image: backend-planilla
+    container_name: website-rrhh
+    ports:
+      - '${PORT}:3000'
